@@ -11,8 +11,9 @@ redirect_from:
 
 Education
 ======
+* Ph.D in Cognition and Perception, University of Iowa, 2025
+  * 2020 NSF GRFP Recipient 
 * B.A. in Psychology, Macaulay Honors College at CUNY Queens College, 2017
-* Ph.D in Cognition and Perception, University of Iowa, 2025 (expected)
 
 Work experience
 ======
