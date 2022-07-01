@@ -11,30 +11,54 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.A. in Psychology, Macaulay Honors College at CUNY Queens College, 2017
+* Ph.D in Cognition and Perception, University of Iowa, 2025 (expected)
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* August 2020: Graduate Student
+  * University of Iowa
+  * Supervisor: Dr. Bob McMurray
+  * Highlights:
+    * Conducted supervised machine learning model on neural data to establish proof-of-concept
+    * Conducted statistical analysis (logistic regression) in R on dataset of 160 subjects
+    * Spearheaded online data collection during COVID-19 on Gorilla, Amazon MTurk, Prolific OpenSesame, and JATOS
+    * Presented results of two studies to faculty and students across three departments
+    * Contributed to two manuscripts for publication
+ 
+* November 2018: Lab Manager
+  * University of Iowa
+  * Supervisor: Dr. Bob McMurray
+  * Highlights: 
+    * Trained six undergraduate and staff research assistants on EEG and eye tracking equipment, various lab software, conduct, procedures, and interactions with participants
+    * Maintained and updated two IRB protocols to ensure data confidentiality and privacy
+    * Recruited, scheduled, and collected data from 750 in person and online participants
+    * Prepared experimental materials using MATLAB, Praat, Gorilla, OpenSesame, and E-builder
+    * Streamlined EEG data processing scripts for novice to advanced scientists
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
+* November 2014: Undergraduate Research Assistant
+  * CUNY Queens College
+  * Supervisor: Dr. Justin Storbeck 
+  * Highlights: 
+    * Scheduled and debriefed experimental sessions with participants
+    * Trained research assistants on various lab software, conduct, procedures, and interaction with participants
+    * Refined and extracted averages from 350 minutes of EEG data using BESA 
+    * Mentored visiting high school research assistant on data collection and preprocessing procedures to present pilot research 
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Data Analysis
+  * Logistic Regression
+  * Support Vector Machines 
+  * Neural Networks
+* Programming
+  * MATLAB 
+  * R
+  * Python
+* Data Collection 
+  * EEG
+  * Eye-Tracking
+  * Online Experiments 
 
 Publications
 ======
@@ -42,13 +66,13 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+Posters
 ======
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
   
-Teaching
+<!--- Teaching
 ======
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
