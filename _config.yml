@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Samantha Chiu"
 title_separator          : "-"
 name                     : &name "Samantha Chiu"
-description              : &description "personal description"
+description              : &description ""
 url                      : https://samanthalchiu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "samanthalchiu/samanthalchiu.github.io"
@@ -176,7 +176,7 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
     output: true
