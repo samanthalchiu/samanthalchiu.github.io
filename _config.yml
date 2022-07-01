@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Care to Explore?"
+  name             : "Find me here:"
   avatar           : "linkedin.jpg"
   bio              : ""
   location         : "University of Iowa"
@@ -176,7 +176,7 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: false
+    output: true
     permalink: /:collection/:path/
   publications:
     output: true
@@ -184,7 +184,7 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
-  presentations:
+  talks:
     output: true
     permalink: /:collection/:path/
 
