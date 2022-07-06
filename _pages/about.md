@@ -28,9 +28,9 @@ Speech perception requires some level of adequate input in order to perceive it.
 
 Talker Adaptation in Unsupervised and Supervised Learning 
 ------
-Each person has their own unique pronunciation of every word due to someone’s accent, the languages they speak, or some unique individual variation. Therefore, for each person you meet, you must adapt to each person’s unique productions to understand them. Prior work has tracked adaption through phonemic retuning in supervised learning paradigms; however, this does not reflect listening in real world scenarios (i.e. in real time conversation). This project examines whether phonemic retuning can occur in unsupervised learning in a distributional learning paradigm. We find that listeners are indeed able to retune phonemic categories with passive exposure, but do not retain this information for long. This project was presented at _______. 
+Each person has their own unique pronunciation of every word due to someone’s accent, the languages they speak, or some unique individual variation. Therefore, for each person you meet, you must adapt to each person’s unique productions to understand them. Prior work has tracked adaption through phonemic retuning in supervised learning paradigms; however, this does not reflect listening in real world scenarios (i.e. in real time conversation). This project examines whether phonemic retuning can occur in unsupervised learning in a distributional learning paradigm. We find that listeners are indeed able to retune phonemic categories with passive exposure, but do not retain this information for long. This project was presented at the 2022 Graduate Symposium. 
 
-Materials for this project are located [here](https://samanthalchiu.github.io/portfolio/mixedmodels/) and [here](https://samanthalchiu.github.io/portfolio/plots/). Currently, I am working on simulating this adaptation in a Bayesian model; materials for this are located [here]().
+Materials for this project are located [here](https://samanthalchiu.github.io/portfolio/mixedmodels/) and [here](https://samanthalchiu.github.io/portfolio/plots/). Currently, I am working on simulating this adaptation in a Bayesian model; materials for this are located [here](https://samanthalchiu.github.io/portfolio/bayesianmodels/).
 
 Research Projects: Dormant
 ======
