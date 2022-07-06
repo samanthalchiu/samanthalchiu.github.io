@@ -8,16 +8,15 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! Thanks for stopping by! My name is Samantha (she/her/hers). I'm an NSF Graduate Research Fellow and incoming 3rd year graduate student at the University of Iowa. I work with Dr. Bob McMurray in the [MACLAB](https://psychology.uiowa.edu/maclab) in the Cognition and Perception within the [Psychological and Brain Sciences](https://psychology.uiowa.edu/) department. My research lines integrate psycholinguistics, sociolinguistics, and cognitive neuroscience and broadly explore how different external factors (i.e. one’s social network) and internal factors (i.e. individual differences in hearing ability) influence speech processing. But to be more specific...
+Hi there! Thanks for stopping by! My name is Samantha (she/her/hers). I'm an NSF Graduate Research Fellow and incoming 3rd year graduate student at the University of Iowa. I work with Dr. Bob McMurray in the [MACLAB](https://psychology.uiowa.edu/maclab) in the Cognition and Perception within the [Psychological and Brain Sciences](https://psychology.uiowa.edu/) department. My research lines integrate psycholinguistics, sociolinguistics, and cognitive neuroscience and broadly explore how different external factors (i.e. one’s social network) and internal factors (i.e. individual differences in hearing ability) influence speech processing. Understanding what factors contribute to the variability of listeners with diverse speech processing abilities allows us to pinpoint areas of improvement to create accessible and equitable spaces. 
 
 Research Projects: Active 
 ====== 
-
 Effect of Linguistic Environment on Speech Perception
 ------
 Each person has their own unique pronunciation of every word due to someone’s accent, the languages they speak, or some unique individual variation. Therefore, you must adapt to each person’s unique productions to understand them. But does the number of people you adapt to change the way you perceive speech entirely? Or who you speak to? This project examines how one’s auditory linguistic environment (i.e. one’s social network) influence how they perceive speech. Key factors we assess is the number of people listeners speak to each week and how diverse these networks are (i.e. age, gender, language background). This project is supported by the wonderful [Dr. Ethan Kutlu](https://www.ethankutlu.com/).
 
-Materials for this project are located [here]() and [here](). 
+Materials for this project are located [here](https://samanthalchiu.github.io/portfolio/gorilla-clean/) and [here](https://samanthalchiu.github.io/portfolio/redcap-clean/). 
 
 Assessing Speech Perception Efficiency from EEG using Machine Learning (Support Vector Machines)
 ------
@@ -31,7 +30,7 @@ Talker Adaptation in Unsupervised and Supervised Learning
 ------
 Each person has their own unique pronunciation of every word due to someone’s accent, the languages they speak, or some unique individual variation. Therefore, for each person you meet, you must adapt to each person’s unique productions to understand them. Prior work has tracked adaption through phonemic retuning in supervised learning paradigms; however, this does not reflect listening in real world scenarios (i.e. in real time conversation). This project examines whether phonemic retuning can occur in unsupervised learning in a distributional learning paradigm. We find that listeners are indeed able to retune phonemic categories with passive exposure, but do not retain this information for long. This project was presented at _______. 
 
-Materials for this project are located [here](http://academicpages.github.io/files/mixedmodel.R) and [here](http://academicpages.github.io/files/plots.R). Currently, I am working on simulating this adaptation in a Bayesian model; materials for this are located [here]().
+Materials for this project are located [here](https://samanthalchiu.github.io/portfolio/mixedmodels/) and [here](https://samanthalchiu.github.io/portfolio/plots/). Currently, I am working on simulating this adaptation in a Bayesian model; materials for this are located [here]().
 
 Research Projects: Dormant
 ======
@@ -42,4 +41,4 @@ The Combined Effect of Unsupervised and Supervised Learning in Speech Category A
 Humans start developing phonetic categories from infancy and continue to develop these categories well into adulthood. The learning mechanisms in each stage of life change given the environment. Infants learn phonetic categories through passive exposure to the input while children acquire phonetic categories with feedback (i.e. from parents, in the classroom). This project studied the effect of unsupervised learning on supervised learning in acquiring phonetic categories as a parallel to the development of speech categories from infancy to childhood. The results of the first experiment were presented at [the Psychonomic Society 2020 Annual Meeting](samanthalchiu.github.io/talks/2020-11-21-audcat).
 
 
-website forked from [academicpages](https://academicpages.github.io) 
+forked from [academicpages](https://academicpages.github.io) 
