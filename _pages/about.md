@@ -12,15 +12,16 @@ Hi there! Thanks for stopping by! My name is Samantha (she/her/hers). I'm an NSF
 
 Research Projects: Active 
 ====== 
+
+Assessing Speech Perception Efficiency from EEG using Machine Learning (Support Vector Machines)
+------
+To perceive speech, one must be both accurate and efficient to understand each word in the little time it takes to produce it. Here, we focus on extracting how efficient listeners are in speech perception by extracting the time course of word recognition. This project combines electroencephalography (EEG) and machine learning (support vector machine) to decode word recognition over time. This methodology has been successful in decoding word recognition in normal hearing adults within subject and in both high and low impedance EEG systems. Currently, we are 1) validating this method against existing methods and 2) extending this to populations with hearing loss. Collaborators on this project include [McCall Sarrett](https://www.mccallesarrett.com/), [Alexis Black](https://languageanddevelopment.ca/), and [Dick Aslin](https://llamblab.haskins.yale.edu/our-team/).
+
 Effect of Linguistic Environment on Speech Perception
 ------
 Each person has their own unique pronunciation of every word due to someone’s accent, the languages they speak, or some unique individual variation. Therefore, you must adapt to each person’s unique productions to understand them. But does the number of people you adapt to change the way you perceive speech entirely? Or who you speak to? This project examines how one’s auditory linguistic environment (i.e. one’s social network) influence how they perceive speech. Key factors we assess is the number of people listeners speak to each week and how diverse these networks are (i.e. age, gender, language background). This project is supported by the wonderful [Dr. Ethan Kutlu](https://www.ethankutlu.com/).
 
 Materials for this project are located [here](https://samanthalchiu.github.io/portfolio/gorilla-clean/) and [here](https://samanthalchiu.github.io/portfolio/redcap-clean/). 
-
-Assessing Speech Perception Efficiency from EEG using Machine Learning (Support Vector Machines)
-------
-To perceive speech, one must be both accurate and efficient to understand each word in the little time it takes to produce it. Here, we focus on extracting how efficient listeners are in speech perception by extracting the time course of word recognition. This project combines electroencephalography (EEG) and machine learning (support vector machine) to decode word recognition over time. This methodology has been successful in decoding word recognition in normal hearing adults within subject and in both high and low impedance EEG systems. Currently, we are 1) validating this method against existing methods and 2) extending this to populations with hearing loss. Collaborators on this project include [McCall Sarrett](https://www.mccallesarrett.com/), [Alexis Black](https://languageanddevelopment.ca/), and [Dick Aslin](https://llamblab.haskins.yale.edu/our-team/).
 
 Effect of Psychoacoustic Ability on Speech Perception
 ------
