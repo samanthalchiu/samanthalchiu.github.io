@@ -1,15 +1,14 @@
 ---
-title: "Paper Title Number 1"
+title: "Decoding the temporal dynamics of speech perception from EEG"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+permalink: /publication/2022-07-06-Decoding
+excerpt: 'In this paper, we successfully found neural correlates of lexical competition from EEG and machine learning (supervised learning; SVM).'
+date: 2022-07-06
+venue: 'NeuroImage'
+paperurl: 'https://psyarxiv.com/6ng2k/download?format=pdf'
+citation: ''
 ---
-This paper is about the number 1. The number 2 is left for future work.
 
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
+[Download paper here](https://psyarxiv.com/6ng2k/download?format=pdf)
 
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+The efficiency of spoken word recognition is essential for real-time communication. There is consensus that this efficiency relies on an implicit process of activating multiple word candidates that compete for recognition as the acoustic signal unfolds in real-time. However, few methods capture the neural basis of this dynamic competition on a msec-by-msec basis. This is crucial for understanding the neuroscience of language, and for understanding hearing, language and cognitive disorders in people for whom current behavioral methods are not suitable. We applied machine-learning techniques to standard EEG signals to decode which word was heard on each trial and analyzed the patterns of confusion over time. Results mirrored psycholinguistic findings: Early on, the decoder was equally likely to report the target (eg, baggage) or a similar sounding competitor (badger), but by around 500 msec, competitors were suppressed. Follow up analyses show that this is robust across EEG systems (gel and saline), with fewer channels, and with fewer trials. Results are robust within individuals and show high reliability. This suggests a powerful and simple paradigm that can assess the neural dynamics of speech decoding, with potential applications for understanding lexical development in a variety of clinical disorders.

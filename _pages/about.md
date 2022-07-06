@@ -11,19 +11,13 @@ redirect_from:
 Hi there! Thanks for stopping by! My name is Samantha (she/her/hers). I'm an NSF Graduate Research Fellow and incoming 3rd year graduate student at the University of Iowa. I work with Dr. Bob McMurray in the [MACLAB](https://psychology.uiowa.edu/maclab) in the Cognition and Perception within the [Psychological and Brain Sciences](https://psychology.uiowa.edu/) department. My research lines integrate psycholinguistics, sociolinguistics, and cognitive neuroscience and broadly explore how different external factors (i.e. one’s social network) and internal factors (i.e. individual differences in hearing ability) influence speech processing. But to be more specific...
 
 Research Projects: Active 
-======
-
-Talker Adaptation in Unsupervised and Supervised Learning 
-------
-Each person has their own unique pronunciation of every word due to someone’s accent, the languages they speak, or some unique individual variation. Therefore, for each person you meet, you must adapt to each person’s unique productions to understand them. Prior work has tracked adaption through phonemic retuning in supervised learning paradigms; however, this does not reflect listening in real world scenarios (i.e. in real time conversation). This project examines whether phonemic retuning can occur in unsupervised learning in a distributional learning paradigm. We find that listeners are indeed able to retune phonemic categories with passive exposure, but do not retain this information for long. This project was presented at _______. 
-
-Materials for this project are located [here]() and [here](). Currently, I am working on simulating this adaptation in a Bayesian model; materials for this are located [here](). 
+====== 
 
 Effect of Linguistic Environment on Speech Perception
 ------
 Each person has their own unique pronunciation of every word due to someone’s accent, the languages they speak, or some unique individual variation. Therefore, you must adapt to each person’s unique productions to understand them. But does the number of people you adapt to change the way you perceive speech entirely? Or who you speak to? This project examines how one’s auditory linguistic environment (i.e. one’s social network) influence how they perceive speech. Key factors we assess is the number of people listeners speak to each week and how diverse these networks are (i.e. age, gender, language background). This project is supported by the wonderful [Dr. Ethan Kutlu](https://www.ethankutlu.com/).
 
-Materials for this project are located [here](). 
+Materials for this project are located [here]() and [here](). 
 
 Assessing Speech Perception Efficiency from EEG using Machine Learning (Support Vector Machines)
 ------
@@ -32,6 +26,12 @@ To perceive speech, one must be both accurate and efficient to understand each w
 Effect of Psychoacoustic Ability on Speech Perception
 ------
 Speech perception requires some level of adequate input in order to perceive it. Listening to speech in challenging conditions such as listening to speech in noise, for example, is more difficult to perceive. But how does an individual’s ability to perceive the input (i.e. lower or higher ability to discriminate subtle differences) change speech perception? This project assesses whether the ability to hear subtle differences can explain differences in speech perception behavior. Many thanks to [Dr. Sarah Colby](https://psychology.uiowa.edu/maclab/members) for her support on this project. 
+
+Talker Adaptation in Unsupervised and Supervised Learning 
+------
+Each person has their own unique pronunciation of every word due to someone’s accent, the languages they speak, or some unique individual variation. Therefore, for each person you meet, you must adapt to each person’s unique productions to understand them. Prior work has tracked adaption through phonemic retuning in supervised learning paradigms; however, this does not reflect listening in real world scenarios (i.e. in real time conversation). This project examines whether phonemic retuning can occur in unsupervised learning in a distributional learning paradigm. We find that listeners are indeed able to retune phonemic categories with passive exposure, but do not retain this information for long. This project was presented at _______. 
+
+Materials for this project are located [here](http://academicpages.github.io/files/mixedmodel.R) and [here](http://academicpages.github.io/files/plots.R). Currently, I am working on simulating this adaptation in a Bayesian model; materials for this are located [here]().
 
 Research Projects: Dormant
 ======
