@@ -33,6 +33,12 @@ Each person has their own unique pronunciation of every word due to someone’s 
 
 Current results were presented at the [183rd Meeting of the Acoustical Society of America](https://samanthalchiu.github.io/talks/2022-12-07-TalkerShift). Materials for this project are located [here](https://samanthalchiu.github.io/portfolio/mixedmodels/) and [here](https://samanthalchiu.github.io/portfolio/plots/). Currently, I am working on simulating this adaptation in a Bayesian model; materials for this are located [here](https://samanthalchiu.github.io/portfolio/bayesianmodels/).
 
+Personal Projects
+======
+Feed Me Seymour! A Content Based [Recipe Recommendation System](https://github.com/samanthalchiu/feed-me-seymour/)
+------
+In an attempt to spice up my meals, I've created a recipe recommendation system that uses similarity between ingredients to recommend new recipes. I learned to data scrape and clean text data and take my first steps into NLP!  
+
 Research Projects: Dormant
 ======
 No one disputes that science is intended to push forth new answers to new (or old) questions. In that pursuit, some answers (or questions) are published, but are unable to be replicated. In an effort to fight the replication crisis (or at least not contribute to it), these projects are intentionally discontinued. Here lies these projects and the effort I put in to pursue them:
@@ -40,11 +46,5 @@ No one disputes that science is intended to push forth new answers to new (or ol
 The Combined Effect of Unsupervised and Supervised Learning in Speech Category Acquisition (2018-2021)
 ------
 Humans start developing phonetic categories from infancy and continue to develop these categories well into adulthood. The learning mechanisms in each stage of life change given the environment. Infants learn phonetic categories through passive exposure to the input while children acquire phonetic categories with feedback (i.e. from parents, in the classroom). This project studied the effect of unsupervised learning on supervised learning in acquiring phonetic categories as a parallel to the development of speech categories from infancy to childhood. The results of the first experiment were presented at the [Psychonomic Society 2020 Annual Meeting](https://samanthalchiu.github.io/talks/2020-11-21-audcat).
-
-Personal Projects
-======
-Feed Me Seymour! A Content Based [Recipe Recommendation System](https://github.com/samanthalchiu/feed-me-seymour/)
-------
-In an attempt to spice up my meals, I've created a recipe recommendation system that uses similarity between ingredients to recommend new recipes. I learned to data scrape and clean text data and take my first steps into NLP!   
 
 forked from [academicpages](https://academicpages.github.io) 
