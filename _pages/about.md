@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! Thanks for stopping by! My name is Samantha (she/her/hers). I'm an NSF Graduate Research Fellow and incoming 3rd year graduate student at the University of Iowa. I work with Dr. Bob McMurray in the [MACLAB](https://psychology.uiowa.edu/maclab) in the Cognition and Perception within the [Psychological and Brain Sciences](https://psychology.uiowa.edu/) department. My research lines integrate psycholinguistics, sociolinguistics, and cognitive neuroscience and broadly explore how different external factors (i.e. one’s social network) and internal factors (i.e. individual differences in hearing ability) influence speech processing. Understanding what factors contribute to the variability of listeners with diverse speech processing abilities allows us to pinpoint areas of improvement to create accessible and equitable spaces. 
+Hi there! Thanks for stopping by! My name is Samantha (she/her/hers). I'm an NSF Graduate Research Fellow and incoming 4th year graduate student at the University of Iowa. I work with Dr. Bob McMurray in the [MACLAB](https://psychology.uiowa.edu/maclab) and Dr. Ethan Kutlu in the [VoiceLab](https://voice.lab.uiowa.edu/) in the Cognition and Perception within the [Psychological and Brain Sciences](https://psychology.uiowa.edu/) department. My research lines integrate psycholinguistics, sociolinguistics, and cognitive neuroscience and broadly explore how different external factors (i.e. one’s social network) and internal factors (i.e. individual differences in hearing ability) influence speech processing. Understanding what factors contribute to the variability of listeners with diverse speech processing abilities allows us to pinpoint areas of improvement to create accessible and equitable spaces. 
 
 Research Projects: Active 
 ====== 
@@ -41,5 +41,10 @@ The Combined Effect of Unsupervised and Supervised Learning in Speech Category A
 ------
 Humans start developing phonetic categories from infancy and continue to develop these categories well into adulthood. The learning mechanisms in each stage of life change given the environment. Infants learn phonetic categories through passive exposure to the input while children acquire phonetic categories with feedback (i.e. from parents, in the classroom). This project studied the effect of unsupervised learning on supervised learning in acquiring phonetic categories as a parallel to the development of speech categories from infancy to childhood. The results of the first experiment were presented at the [Psychonomic Society 2020 Annual Meeting](https://samanthalchiu.github.io/talks/2020-11-21-audcat).
 
+Personal Projects
+======
+Feed Me Seymour! A Content Based [Recipe Recommendation System](https://github.com/samanthalchiu/feed-me-seymour/)
+------
+In an attempt to spice up my meals, I've created a recipe recommendation system that uses similarity between ingredients to recommend new recipes. I learned to data scrape and clean text data and take my first steps into NLP!   
 
 forked from [academicpages](https://academicpages.github.io) 
