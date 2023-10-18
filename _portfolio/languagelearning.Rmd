@@ -1,0 +1,146 @@
+---
+title: "Uncovering Strategies in Music and Language Learning"
+excerpt: "Studying Language using Online A/B testing, Statistical Analyses, EDA, and Logistic Regression."
+collection: portfolio  
+output:
+  html_document:
+    df_print: paged
+---
+
+#### Languages can be difficult to learn, though infants and children seem to do so easily (CITE). This project uncovers how language learning may occur in adults and what strategy aids improvement in identifying speech sounds, a crucial part of learning a language. 
+
+#### In this dataset, participants learned to distinguish two auditory categories. These categories were sounds that were created by combining two frequencies together (similar to a two-note-chord). 
+
+```{r load data, echo = false}
+rm(list=ls())
+
+my_packages <- c("tidyverse","lme4") # Specify your packages
+lapply(my_packages, require, character.only = TRUE) 
+
+learningdata <- read.csv('C:\\Users\\saman\\Desktop\\learningcategories.csv')
+```
+
+``` {r see data} 
+head(learningdata)
+```
+
+#### Dataset includes: 
+
+* Participant.Private.ID: 162 participant IDs
+* Trial.Number: 384 trials per participant
+* Block: 12 blocks per participant (32 trials per block)
+* t1bk: tone 1 in bark (an alternative unit to Hz; better reflective of human hearing)
+* t2bk: tone 2 in bark (an alternative unit to Hz; better reflective of human hearing)
+* Match: whether listeners heard Matching categories or Mismatching categories
+* Response: the category label assigned to each stimulus (not listed); f or j
+* Correct: whether response was Correct
+
+#### First, I want to know whether participants did learn the categories. Thus, I compared accuracy from the first block to the last block.
+
+``` {r Did participants learn?}
+# get accuracy averaged across block for each participant
+subaccuracy <- aggregate(Correct ~ Block + Participant.Private.ID, data = learningdata, FUN = mean, na.rm=TRUE)
+# we only want to look at the first and last block
+subaccuracy <- subaccuracy %>% mutate(Block = replace(Block, Block == "1", "start"), 
+                                    Block = replace(Block, Block == "12", "end"))
+# plot accuracy for first and last block
+subaccuracy %>%
+ filter(Block %in% c("start", "end")) %>%
+ ggplot() +
+ aes(x = Block, y = Correct) +
+ geom_boxplot(fill = "#112446") +
+ theme_minimal()
+```
+``` {r t-test to compare improvement for subjects}
+t.test(subaccuracy$Correct[subaccuracy$Block == "start"], subaccuracy$Correct[subaccuracy$Block == "end"])
+```
+#### Great! On average, everyone improved from the first block to the last block. But did everyone improve? Let's calculate a difference score between the first and last block to find out. 
+
+``` {r Did everyone learn?}
+diffdata <- spread(subaccuracy,Block,Correct)
+diffdata$diffscore <- diffdata$end - diffdata$start # for each subject, subtract block 12 from block 1
+
+hist(diffdata$diffscore)
+```
+
+#### Not everyone improved! Some improved between the first and last block (difference score > 0) while others did not (difference score <= 0). 
+
+#### How many participants improved? 
+
+``` {r How many participants improved?}
+improvement <- diffdata$Participant.Private.ID[which(diffdata$diffscore>0)]
+noimprovement <- diffdata$Participant.Private.ID[which(diffdata$diffscore<=0)]
+
+print(paste(length(improvement), ' participants improved while ',paste(length(noimprovement)), ' participants did not improve.' ))
+```
+
+#### Why did some participants improve while others didn't? 
+
+#### Participants who improved must use pitch differences to categorize sounds. Ideally, they'd recognize and match the pitch to its category. 
+
+#### However, a simpler approach might be to use similarity judgments: categorizing based on whether the current sound is similar or dissimilar to the previous one.
+
+#### I measured similarity by comparing sound frequencies between trials and note if participants maintained or switched category labels. This information can be used to predict whether participants improved or not in a logistic regression.
+``` {r did participants use similarity judgments? }
+learningdata <- learningdata %>% 
+  group_by(Participant.Private.ID) %>% # for each subject
+  mutate(dist = c(NA, sqrt(diff(t1bk)^2 + diff(t2bk)^2)), # calculate the difference between the previous and current sound, leaving the first one out
+         respchange = as.integer(Response != lag(Response, default = first(Response))))
+learningdata <- learningdata[-which(learningdata$Trial.Number == 1),] # since the first trial doesn't have a previous sound, let's remove that from analysis 
+
+learningdata$dist_cent <- learningdata$dist - mean(learningdata$dist) # standardize distance between sounds
+learningdata$CC_respchange <- learningdata$respchange - .5 # codify whether learners changed response
+learningdata$dist_chng <- learningdata$dist_cent*learningdata$CC_respchange # codify whether learners changed response as a function of hearing differences between sounds 
+
+sublvldata <- aggregate(cbind(dist_cent, CC_respchange, dist_chng) ~ Participant.Private.ID, data = learningdata[which(learningdata$Block == 12),], FUN = mean, na.rm = TRUE)
+
+sublvldata$learned <- "improved"
+sublvldata$learned[sublvldata$Participant.Private.ID %in% noimprovement] <- "no improvement"
+sublvldata$bin_learned <- 1
+sublvldata$bin_learned[sublvldata$Participant.Private.ID %in% noimprovement] <- 0
+
+improvemodel <- glm(bin_learned ~ dist_cent+CC_respchange+dist_chng, data = sublvldata)
+summary(improvemodel)
+
+```
+
+``` {r plot improved vs no improvement }
+
+ggplot(sublvldata) +
+ aes(x = learned, y = dist_chng) +
+ geom_boxplot(fill = "#112446") +
+ theme_minimal()
+
+```
+#### People improved when they focused on how similar or different the sounds were. When sounds were different, learners changed their response; when sounds were similar, learners kept the same response. Those who improved used this strategy more than those who didn't.
+
+#### Though this may seem obvious, this gives insight into strategies of language learning. Learning a new language depends on hearing differences between sounds. If we can help people hear these differences more clearly and consistently, they can learn languages faster.
+
+#### What if listeners were given prior exposure to the language? Would that be useful in improving language learning? To test this, I assess whether listeners hearing sounds that match the categories will improve learning. Half of participants heard matching categories while the other half heard similar sounds, but mismatching categories.
+
+```{r matching categories}
+
+matchinfo <- unique(learningdata[,c("Participant.Private.ID","Match")])
+sublvldata <- merge(sublvldata,matchinfo)
+
+ggplot(sublvldata) +
+ aes(x = learned) +
+ geom_bar(fill = "#112446") +
+ theme_minimal() +
+ facet_wrap(vars(Match))
+```
+```{r }
+print(paste('Within those who heard matching categories,' , round(length(which(sublvldata$Match == "Match" & sublvldata$bin_learned == 1))/length(which(sublvldata$Match == "Match"))*100,2), '% of participants improved while ', round(length(which(sublvldata$Match == "Mismatch" & sublvldata$bin_learned == 1))/length(which(sublvldata$Match == "Mismatch"))*100,2),'% of participants who heard mismatching categories improved.'))
+```
+
+```{r does adding this info improve the model?}
+
+sublvldata$CC_Match <- (sublvldata$Match == "Match") - .5
+
+improvemodel2 <- glm(bin_learned ~ dist_cent+CC_respchange+dist_chng+CC_Match, data = sublvldata)
+summary(improvemodel2)
+```
+
+#### These differences between participants were not statistically significant; hearing matching or mismatching categories does not predict whether participants improved in the task. The majority of learning still came from actively learning labels for sound categories.
+
+#### Though familiarizing with the sound categories may not be a viable strategy to improve language learning, this is encouraging to know that it may not matter what listeners hear before learning. Learners can still learn a language even if they heard the wrong categories to start. Learners can still learn a language regardless of what languages they already know.
