@@ -21,7 +21,7 @@ Highlights:
 
 Feed Me Seymour! A Content Based [Recipe Recommendation System](https://github.com/samanthalchiu/feed-me-seymour/)
 ------
-In an attempt to spice up my meals, I've created a recipe recommendation system that uses similarity between ingredients to recommend new recipes. I learned to data scrape and clean text data and take my first steps into NLP!  
+In an attempt to spice up my meals, I've created a recipe recommendation system that uses similarity between ingredients to recommend new recipes. I learned to data scrape and clean text data and take my first steps into NLP!
 
 Assessing Speech Perception Efficiency from EEG using Machine Learning (Support Vector Machines)
 ------
