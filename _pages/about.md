@@ -12,12 +12,9 @@ Hi there! I'm Samantha (she/her/hers), a graduate student at the University of I
 
 Projects 
 ====== 
-[Uncovering Strategies](https://samanthalchiu.github.io/posts/2023/02/language-learning/) in Music and Language Learning in Adults
+Feed Me Seymour! A Content Based [Recipe Recommendation System](https://github.com/samanthalchiu/feed-me-seymour/)
 ------
-Highlights:
-* R, ggplot
-* t-tests, logistic regression
-* A/B testing
+In an attempt to spice up my meals, I've created a recipe recommendation system that uses similarity between ingredients to recommend new recipes. I learned to data scrape and clean text data and take my first steps into NLP!
 
 Feed Me Seymour! A Content Based [Recipe Recommendation System](https://github.com/samanthalchiu/feed-me-seymour/)
 ------
