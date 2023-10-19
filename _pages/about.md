@@ -12,8 +12,9 @@ Hi there! I'm Samantha (she/her/hers), a graduate student at the University of I
 
 Projects 
 ====== 
-[Uncovering Strategies in Music and Language Learning in Adults](https://samanthalchiu.github.io/posts/2023/02/language-learning/)
+[Uncovering Strategies](https://samanthalchiu.github.io/posts/2023/02/language-learning/) in Music and Language Learning in Adults
 ------
+
 Highlights:
 * R, ggplot
 * t-tests, logistic regression
