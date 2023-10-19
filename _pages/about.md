@@ -14,7 +14,6 @@ Projects
 ====== 
 [Uncovering Strategies](https://samanthalchiu.github.io/posts/2023/02/language-learning/) in Music and Language Learning in Adults
 ------
-
 Highlights:
 * R, ggplot
 * t-tests, logistic regression
