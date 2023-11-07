@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+<head>
+<title>Feed-Me-Seymour: Samantha Chiu</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+<!-- Add any additional head elements here -->
+</head>
+<body class="is-preload">
+
+<!-- Nav -->
+<nav id="nav">
+	<ul class="container">
+	<li><a href="index.html#top">About Me</a></li>
+	<li><a href="index.html#work">Work</a></li>
+	<li><a href="index.html#portfolio">Portfolio</a></li>
+	<li><a href="index.html#contact">Contact</a></li>
+	</ul>
+</nav>
+<article id="post" class="wrapper style1">
+<h2>Feed Me Seymour! A Content Based Recipe Recommendation System<h2>
+<h3>Why I did it:</h3>
+<p>I enjoy cooking in my spare time, but I end up cooking the same things on repeat. Sure this is a function of grad school, but it would be nice to at least know there are other recipes I can try!</p>
+
+<p>Based on the ingredients from each recipe, the algorithm outputs the 10 most similar recipes, assuming that one would like (or be able to make) a new recipe that has similar ingredients to an old recipe.</p>
+
+<h3>What I did:</h3>
+<ul>
+  <li>Data scraped from allrecipes.com for 10,000 recipes</li>
+  <li>Cleaned data:
+    <ul>
+      <li>Removed recipes that were inputted erroneously (n = 2500)</li>
+      <li>Removed irrelevant words from the ingredients list (didn't want "shredded" to increase or decrease similarity between recipes)</li>
+      <li>Recompiled ingredients into a single character string</li>
+    </ul>
+  </li>
+  <li>Created algorithm:
+    <ul>
+      <li>Converted ingredient lists for each recipe into tf-idf vectors</li>
+      <li>Computed similarity between all recipes from vectors</li>
+      <li>Extract top 10 most similar recipes</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>What I have yet to do:</h3>
+<ul>
+  <li>I wanted to see if I could extract cuisine type or meal type (or both) based on the ingredients alone. For example, an ingredient like fish sauce is typically found in Vietnamese cuisine and possibly other Asian cuisines, but nowhere else. My attempt at clustering this data didn't get me too far; I'd like to learn more about hierarchical clustering for that. (code is within <code>recs_2.py</code>)</li>
+  <li>I want to implement other variables in the recommendation system. In short, make this algorithm recommend recipes by cuisine type, food/ingredient aversions, meal types, vegan/vegetarian/pescatarian</li>
+</ul>
+
+<h3>What I gained:</h3>
+<ul>
+  <li>A database of recipes when I can get the time to try something new!</li>
+  <li>Concrete experience in Python that I can share</li>
+  <li>Experience in data scraping and data cleaning text data (useful for text NLP projects)</li>
+</ul>
+</article>
+</body>
+</html>
