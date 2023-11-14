@@ -17,7 +17,7 @@ form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+section, summary, time, mark, audio, video, {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -1947,8 +1947,54 @@ iframe {
 	padding-top: 0; /* Remove top padding */
   }
   
-  /* ... rest of your CSS ... */
+  /* badges */
   
+  .badge-container {
+	display: flex;
+  overflow-x: auto;
+  gap: 20px; /* Space between badges */
+  margin: 0 auto; /* Centers the container with equal margin on both sides */
+  max-width: 75%; /* Adjust this percentage to make the container smaller than the article */
+  padding: 20px; /* Adds space inside the container, preventing content from touching the sides */
+}
+  
+  .badge {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 0 0 auto; /* Do not grow or shrink, stay auto width */
+	width: 33%; /* Width of each badge, adjust as necessary */
+	border: none;/*1px solid #ccc;  Optional border */
+	margin-right: 1px;
+	/*border-radius: 5px; /* Optional rounded corners */
+	padding: 10px; /* Space inside each badge */
+	text-align: center; /* Center text and image inside the badge */
+	cursor: pointer; /* Change mouse cursor on hover */
+	transition: transform 0.2s; /* Smooth transform on click/hover */
+  }
+  
+  .badge:focus {
+	outline: none;
+	transform: scale(1.05); /* Slightly enlarge on focus */
+  }
+  
+  .badge i {
+	font-size: 1em; /* Adjust the size of the icon */
+	margin-bottom: 0.5em; /* Space between icon and text */
+	max-width: 100%; /* Make image responsive within badge */
+	height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Optional custom scrollbar styles */
+  .badge-container::-webkit-scrollbar {
+	height: 4px;
+  }
+  
+  .badge-container::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+	border-radius: 2px;
+  }
+
 
 /* Icons */
 
@@ -2045,6 +2091,15 @@ iframe {
 				.wrapper.style4 form textarea:focus {
 					background: #252525;
 				}
+
+				.learning {
+					margin-left: auto; /* Centers the article and adds margin to the left */
+					margin-right: auto; /* Centers the article and adds margin to the right */
+					max-width: 800px; /* Adjust this value to suit your content's width */
+					padding: 0 200px; /* This adds some space inside the article, preventing content from touching the sides of the browser window */
+				  }
+
+
 
 /* Nav */
 
@@ -2401,6 +2456,7 @@ iframe {
 				text-align: center;
 			}
 
+			
 		/* Nav */
 
 			#nav {
