@@ -1666,8 +1666,8 @@ input, select, textarea {
 /* i frame*/
 iframe {
 	display: block;
-	width: 100vw;
-	height: 100vh;
+	width: 99vw;
+	height: 80vh;
 	border: none;
 	}
 
