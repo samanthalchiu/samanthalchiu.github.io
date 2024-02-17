@@ -172,7 +172,15 @@ input, select, textarea {
 		h1 strong {
 			font-weight: 700;
 		}
-
+		h1 a, strong a {
+			color: #007BFF; /* Blue color for links */
+			text-decoration: none; /* Removes the underline from links */
+		}
+		
+		h1 a:hover, strong a:hover {
+			color: #0056b3; /* Darker blue color on hover */
+			text-decoration: underline; /* Adds underline on hover for emphasis */
+		}
 	h2 {
 		font-size: 2em;
 		letter-spacing: -0.015em;
